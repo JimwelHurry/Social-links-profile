@@ -1,0 +1,126 @@
+/* Root Variables */
+:root {
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey-700: hsl(0, 0%, 20%);
+  --grey-800: hsl(0, 0%, 12%);
+  --grey-900: hsl(0, 0%, 8%);
+  --london-color: #7f933b;
+  --font-family: 'Inter', sans-serif;
+  --font-size-paragraph: 14px;
+}
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-paragraph);
+  color: var(--white);
+  background-color: var(--grey-900);
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+main {
+  width: 100%;
+  max-width: 375px; /* Mobile-first design */
+  background-color: var(--grey-800);
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  padding: 2rem 1.5rem;
+}
+
+main img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin: 0 auto 1rem;
+}
+
+.profile-details {
+  margin: 1rem 0;
+}
+
+.profile-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.profile-location {
+  font-size: 0.875rem;
+  color: var(--london-color); /* Updated color for London, United Kingdom */
+  margin-bottom: 0.5rem;
+}
+
+.profile-bio {
+  font-size: 0.875rem;
+  color: var(--grey-700);
+  font-weight: 400;
+}
+
+.profile-links {
+  margin-top: 2rem;
+}
+
+button {
+  display: block;
+  width: 100%;
+  background-color: var(--grey-700);
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--green);
+}
+
+footer {
+  font-size: 0.75rem;
+  color: var(--grey-700);
+  text-align: center;
+  margin-top: 1rem;
+}
+
+footer a {
+  color: var(--green);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (min-width: 1440px) {
+  main {
+    max-width: 600px;
+    padding: 3rem 2rem;
+  }
+
+  .profile-name {
+    font-size: 2rem;
+  }
+
+  button {
+    font-size: 1.125rem;
+    padding: 1rem;
+  }
+}
